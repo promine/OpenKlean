@@ -9,10 +9,12 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    @boards = Board.all
     @project = Project.new
   end
 
   def edit
+    @boards = Board.all
     @project = Project.find(params[:id])
   end
   
