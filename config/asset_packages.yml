@@ -7,7 +7,9 @@ javascripts:
   - controls
 #- frontend:
 #- backend:
-#stylesheets:
-#- base:
+stylesheets:
+- base:
+  - application
+  - boards
 #- frontend:
 #- backend:
