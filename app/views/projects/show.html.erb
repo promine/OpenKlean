@@ -1,2 +1,10 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<% div_for @project do %>
+	<h2> <%= link_to_unless_current h(@project.name), @project %> </h2>
+	<%= simple_format h(@project.description)%>
+<% end %>
+
+<p>
+	<%= link_to 'Edit', edit_project_path(@project) %> |
+	<%= link_to 'Destroy', @project, :method => :delete, :confirm => "Are you sure?" %> |
+	<%= link_to 'See All Projects', projects_path %>
+</p>
