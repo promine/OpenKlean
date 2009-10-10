@@ -20,6 +20,8 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "authlogic", :version => '2.1.2'
+  config.gem "calendar_date_select"
+  config.gem "yfactorial-utility_scopes", :lib => 'utility_scopes', :source => "http://gems.github.com/"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

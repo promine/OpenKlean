@@ -1,2 +1,9 @@
-<h1>Phases#show</h1>
-<p>Find me in app/views/phases/show.html.erb</p>
+<% div_for @phase do %>
+	<h4> <%= @phase.description%> on Project <%= @phase.project.name %></h4>
+<% end %>
+
+<p>
+	<%= link_to 'Edit', edit_phase_path(@phase) %> |
+	<%= link_to 'Destroy', @phase, :method => :delete, :confirm => "Are you sure?" %> |
+	<%= link_to 'See All Phases', phases_path %>
+</p>

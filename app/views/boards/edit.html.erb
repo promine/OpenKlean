@@ -1,0 +1,22 @@
+<% form_for(@board) do |f| %>
+
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <ul id="columns-set">
+    <%= render :partial => 'board_column', :collection => @board.board_columns %>
+  </ul>
+  <br class="clear" />
+
+  <p class="add-item-multi-form"><%= add_board_column "Add board column" %></p>
+
+  <%= f.submit t(:submit) %>
+
+<% end %>
+
+<%= sortable_element 'columns-set',
+  :handle => 'board-column-item',
+  :overlap => :horizontal,
+  :constraint => 'horizontal' %>
