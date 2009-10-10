@@ -7,18 +7,19 @@ class Board < ActiveRecord::Base
   # validations
   validates_presence_of :description
 
-
-  def board_columns_attributes=(column_attributes)
+  def board_columns_attributes=(attributes)
     current_board_columns = board_columns.collect(&:id)
     new_board_columns  = []
 
-    column_attributes.each do |attributes|
-      if attributes[:id].blank?
-        board_column = board_columns.build(attributes)
+    attributes.each_index do |i|
+      # change the rank of the column (range: 1 to [number_of_columns])
+      attributes[i][:rank] = i + 1
+      if attributes[i][:id].blank?
+        board_column = board_columns.build(attributes[i])
       else
-        board_column = board_columns.detect { |t| t.id == attributes[:id].to_i }
-        board_column.attributes = attributes
-        new_board_columns << attributes[:id].to_i
+        board_column = board_columns.detect { |t| t.id == attributes[i][:id].to_i }
+        board_column.attributes = attributes[i]
+        new_board_columns << attributes[i][:id].to_i
       end
     end
 

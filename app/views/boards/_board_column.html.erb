@@ -3,7 +3,6 @@
     <%= t.text_field :label, :size => 60, :maxlength => 150 %>
     <%= t.hidden_field :rank %>
     <p>
-      <%= t.hidden_field :id, :index => nil unless board_column.new_record? %>
       <%= link_to_function image_tag('icons/remove_mini.gif', :alt => 'Remover', :title => 'Remover registro'), "$(this).up('.board-column-item').remove()" %>
     </p>
   <% end %>
