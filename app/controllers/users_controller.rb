@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        flash[:notice] = t(:registration_success)
+        flash[:notice] = t('registration.success')
         format.html { redirect_to(root_url) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else

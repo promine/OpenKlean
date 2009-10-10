@@ -8,7 +8,10 @@ en:
   registration:
     register: "Register"
     sign_up: "Sign Up"
-    registration_success: "Registration successful"
+    login_submit: "Log in!"
+    success: "Registration successful"
+    login_success: "Successfully logged in!"
+    session_end: "You have been logged out."
   activerecord:
     success:
       create: "{{model}} created successfully"

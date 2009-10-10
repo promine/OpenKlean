@@ -6,7 +6,9 @@
   </head>
 
   <body>
-    <%= link_to t(:register), new_user_path %>
+    <p style="color: green"><%= flash[:notice] %></p>
+    
+    <%= link_to t('registration.register'), new_user_path %>
     <%= yield %>
     <%= render :partial => "layouts/analytics" %>
   </body>
