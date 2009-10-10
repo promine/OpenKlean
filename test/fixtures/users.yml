@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  login: MyString
-  email: MyString
-  name: MyString
+  username: user1
+  email: user1@gmail.com
+  name: User1
 
 two:
-  login: MyString
-  email: MyString
-  name: MyString
+  username: user2
+  email: user2@gmail.com
+  name: User2

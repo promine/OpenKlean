@@ -10,7 +10,7 @@ class UserSessionsController < ApplicationController
   def create
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
-      flash[:notice] = t('registration.login_sucess')
+      flash[:notice] = t('registration.login_success')
       redirect_to root_url
     else
       render :action => 'new'
