@@ -6,6 +6,7 @@
   </head>
 
   <body>
+    <%= link_to t(:register), new_user_path %>
     <%= yield %>
     <%= render :partial => "layouts/analytics" %>
   </body>

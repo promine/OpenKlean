@@ -1,0 +1,5 @@
+<h1><%= t(:sign_up) %></h1>
+
+<%= render :partial => "user_form", :locals => { :user => @user } %>
+
+<%= link_to t(:back), root_path %>
