@@ -1,12 +1,13 @@
 class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
-      t.string :username
-      t.string :email
       t.string :name
-      t.string :crypted_password
-      t.string :password_salt
+      t.string :username,           :null => false
+      t.string :email,              :null => false
+      t.string :crypted_password,   :null => false
+      t.string :password_salt,      :null => false
       t.string :persistence_token
+      t.string :perishable_token
       
       t.integer  :login_count           #Increased every time an explicit login is made. This will *NOT* increase if logging in by a session, cookie, or basic http auth
       t.integer  :failed_login_count    #This increases for each consecutive failed login. See Authlogic::Session::BruteForceProtection and the consecutive_failed_logins_limit config option for more details.
