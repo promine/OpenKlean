@@ -30,7 +30,7 @@ class ProjectsController < ApplicationController
   end
   
   def update
-    @project = Post.find(params[:id])
+    @project = Project.find(params[:id])
 
     respond_to do |format|
       if @project.update_attributes(params[:project])
