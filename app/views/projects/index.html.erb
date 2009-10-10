@@ -1,2 +1,9 @@
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
+<h1>Listing projects</h1>
+
+<% for project in @projects %>
+
+	<%= project.name %>
+
+<% end %>
+
+<%= link_to 'New project', new_project_path %>

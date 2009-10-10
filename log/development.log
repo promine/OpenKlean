@@ -90,3 +90,35 @@ Migrating to CreateTasksUsers (20091010153041)
   [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091010153041')[0m
   [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
   [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-10 14:37:19) [GET]
+
+ActionController::RoutingError (No route matches "/proje" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-10-10 14:37:26) [GET]
+  [4;36;1mProject Load (2.0ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering projects/index
+Rendered layouts/_analytics (0.5ms)
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-10-10 14:37:28) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered layouts/_analytics (0.1ms)
+Completed in 115ms (View: 65, DB: 1) | 200 OK [http://localhost/projects/new]
