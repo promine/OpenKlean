@@ -8,5 +8,8 @@ class BoardColumn < ActiveRecord::Base
   validates_presence_of :board
   validates_presence_of :rank
   validates_numericality_of :rank, :only_integer => true
-  
+
+  # plugin configurations
+  ordered_by 'rank ASC'
+
 end

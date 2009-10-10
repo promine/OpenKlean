@@ -41,9 +41,6 @@ class BoardsController < ApplicationController
   def update
     @board = Board.find(params[:id])
     params[:board][:board_columns_attributes] ||= []
-    params[:board][:board_columns_attributes].each do |column|
-      column[:rank] = 1 if column[:rank].blank?
-    end
 
     respond_to do |format|
       if @board.update_attributes(params[:board])
