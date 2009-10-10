@@ -6,9 +6,8 @@ en:
     back: "Back"
     create: "Create"
   registration:
-    register: "Register"
-    sign_up: "Sign Up"
-    login_submit: "Log in!"
+    login: "Log in"
+    signup: "Sign Up"
     success: "Registration successful"
     login_success: "Successfully logged in!"
     session_end: "You have been logged out."
