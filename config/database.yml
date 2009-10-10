@@ -14,7 +14,8 @@ development:
   database: openklean_development
   pool: 5
   username: openklean
-  password:
+  password: openklean
+  host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -40,7 +41,8 @@ test:
   database: openklean_test
   pool: 5
   username: openklean
-  password:
+  password: openklean
+  host: localhost
 
 production:
   adapter: postgresql
@@ -48,4 +50,5 @@ production:
   database: openklean_production
   pool: 5
   username: openklean
-  password:
+  password: openklean
+  host: localhost
