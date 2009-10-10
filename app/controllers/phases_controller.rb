@@ -9,10 +9,12 @@ class PhasesController < ApplicationController
   end
 
   def new
+    @projects = Project.all
     @phase = Phase.new
   end
 
   def edit
+    @projects = Project.all
     @phase = Phase.find(params[:id])
   end
   

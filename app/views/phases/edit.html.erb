@@ -1,2 +1,32 @@
-<h1>Phases#edit</h1>
-<p>Find me in app/views/phases/edit.html.erb</p>
+<h1>Editing phase</h1>
+
+<% form_for(@phase) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+
+	<p>
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </p>
+
+	<p>
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </p>
+
+	<p>
+    <%= f.label :project_id %><br />
+    <%= f.collection_select :project_id, @projects, :id, :name  %>
+  </p>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @phase %> |
+<%= link_to 'Back', phases_path %>

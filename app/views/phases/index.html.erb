@@ -1,2 +1,11 @@
-<h1>Phases#index</h1>
-<p>Find me in app/views/phases/index.html.erb</p>
+<h1>Listing phases</h1>
+
+<% for phase in @phases %>
+
+	<% div_for phase do %>
+		<h4> <%= link_to_unless_current h(phase.description), phase %> </h4>
+	<% end %>
+
+<% end %>
+
+<%= link_to 'New phase', new_phase_path %>
