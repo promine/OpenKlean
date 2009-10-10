@@ -2,7 +2,10 @@
 
 <% for project in @projects %>
 
-	<%= project.name %>
+	<% div_for project do %>
+		<h2> <%= link_to_unless_current h(project.name), project %> </h2>
+		<%= simple_format h(project.description)%>
+	<% end %>
 
 <% end %>
 

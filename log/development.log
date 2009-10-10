@@ -122,3 +122,104 @@ Rendering template within layouts/application
 Rendering projects/new
 Rendered layouts/_analytics (0.1ms)
 Completed in 115ms (View: 65, DB: 1) | 200 OK [http://localhost/projects/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-10-10 14:39:32) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered layouts/_analytics (0.1ms)
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/projects/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2009-10-10 14:39:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"LnxDYvX2hYj0yh+9kbxuzA0OIPUri6YBPX/g2tZUXRI=", "project"=>{"name"=>"teste", "description"=>"teetet teet heth ethet teteh"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (22.3ms)[0m   [0mINSERT INTO "projects" ("name", "board_id", "created_at", "updated_at", "description") VALUES(E'teste', NULL, '2009-10-10 17:39:38.296729', '2009-10-10 17:39:38.296729', E'teetet teet heth ethet teteh') RETURNING "id"[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/1
+Completed in 90ms (DB: 32) | 302 Found [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-10-10 14:39:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (1.6ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering projects/show
+Rendered layouts/_analytics (0.1ms)
+Completed in 16ms (View: 4, DB: 2) | 200 OK [http://localhost/projects/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-10-10 14:39:41) [GET]
+  [4;36;1mProject Load (2.2ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering projects/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 16ms (View: 10, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-10-10 14:40:22) [GET]
+  [4;36;1mProject Load (2.2ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering projects/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 18ms (View: 11, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-10-10 14:40:25) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Rendered layouts/_analytics (0.1ms)
+Completed in 75ms (View: 3, DB: 1) | 200 OK [http://localhost/projects/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2009-10-10 14:40:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"LnxDYvX2hYj0yh+9kbxuzA0OIPUri6YBPX/g2tZUXRI=", "project"=>{"name"=>"outro teste", "description"=>"hahaha ahahah"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO "projects" ("name", "board_id", "created_at", "updated_at", "description") VALUES(E'outro teste', NULL, '2009-10-10 17:40:30.589222', '2009-10-10 17:40:30.589222', E'hahaha ahahah') RETURNING "id"[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects/2
+Completed in 23ms (DB: 4) | 302 Found [http://localhost/projects]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-10-10 14:40:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProject Load (1.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering projects/show
+Rendered layouts/_analytics (0.1ms)
+Completed in 13ms (View: 1, DB: 2) | 200 OK [http://localhost/projects/2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-10-10 14:40:33) [GET]
+  [4;35;1mProject Load (2.3ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering projects/index
+Rendered layouts/_analytics (0.1ms)
+Completed in 15ms (View: 9, DB: 3) | 200 OK [http://localhost/projects]
