@@ -1,0 +1,13 @@
+--- 
+javascripts: 
+- base: 
+  - prototype
+  - effects
+  - dragdrop
+  - controls
+#- frontend:
+#- backend:
+#stylesheets:
+#- base:
+#- frontend:
+#- backend:

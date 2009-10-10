@@ -11,6 +11,9 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
+  # set the base layout
+  layout 'application'
+
   protected
   def set_locale
     # if params[:locale] is nil then I18n.default_locale will be used 
