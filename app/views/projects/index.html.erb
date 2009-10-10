@@ -1,2 +1,12 @@
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
+<h1>Listing projects</h1>
+
+<% for project in @projects %>
+
+	<% div_for project do %>
+		<h2> <%= link_to_unless_current h(project.name), project %> </h2>
+		<%= simple_format h(project.description)%>
+	<% end %>
+
+<% end %>
+
+<%= link_to 'New project', new_project_path %>

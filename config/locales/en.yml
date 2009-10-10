@@ -9,3 +9,8 @@ en:
     register: "Register"
     sign_up: "Sign Up"
     registration_success: "Registration successful"
+  activerecord:
+    success:
+      create: "{{model}} created successfully"
+      update: "{{model}} updated successfully"
+      remove: "{{model}} removed successfully"
