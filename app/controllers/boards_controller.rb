@@ -18,11 +18,9 @@ class BoardsController < ApplicationController
   def create
     @board = Board.new(params[:board])
     params[:board][:board_columns_attributes] ||= []
-    params[:board][:board_columns_attributes].each do |column|
-      column[:rank] = 1 if column[:rank].blank?
-    end
 
     respond_to do |format|
+      debugger
       if @board.save
         flash[:notice] = t('activerecord.success.create', :model => Board)
         format.html { redirect_to :action => (params.key?(:save_and_new)) ? "new" : "index" }
