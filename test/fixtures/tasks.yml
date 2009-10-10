@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyText
+  priority: 1
+  complexity: 1
+  estimate_time: 1
+  spent_time: 1
+
+two:
+  description: MyText
+  priority: 1
+  complexity: 1
+  estimate_time: 1
+  spent_time: 1
