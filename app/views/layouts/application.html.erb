@@ -8,7 +8,15 @@
   </head>
 
   <body>
-    <%= link_to t(:register), new_user_path %>
+    <p style="color: green"><%= flash[:notice] %></p>
+
+    <% if current_user %>
+      <%= link_to t('registration.edit_profile'), edit_user_path(:current) %> |
+      <%= link_to t('registration.logout'), logout_path %>
+    <% else %>
+      <%= link_to t('registration.signup'), signup_path %> |
+      <%= link_to t('registration.login'), login_path %>
+    <% end %>
     <%= yield %>
     <%= render :partial => "layouts/analytics" %>
   </body>

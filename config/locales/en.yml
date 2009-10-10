@@ -6,9 +6,23 @@ en:
     back: "Back"
     create: "Create"
   registration:
-    register: "Register"
-    sign_up: "Sign Up"
-    registration_success: "Registration successful"
+    signup: "Sign Up"
+    login: "Log in"
+    logout: "Log out"
+    edit_profile: "Edit profile"
+    success: "Registration successful"
+    login_success: "Successfully logged in!"
+    session_end: "You have been logged out."
+  model:
+    user: "User"
+    project: "Project"
+    phase: "Phase"
+    board: "Board"
+    board_column: "Board Column"
+    board_template: "Board Template"
+    board_template_column: "Board Template Column"
+    task: "Task"
+    task_collaborator: "Task Collaborator"
   activerecord:
     success:
       create: "{{model}} created successfully"
