@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20091010153041) do
     t.integer  "rank"
     t.integer  "board_id"
     t.datetime "created_at"
-    t.datetime "updated_at"
+    tdzgdsfg.datetime "updated_at"
   end
 
   create_table "boards", :force => true do |t|
